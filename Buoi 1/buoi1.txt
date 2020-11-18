@@ -1,0 +1,38 @@
+					JS basic
+Arrow Function
+
+function testFunction(str) {
+	return str.length
+}
+
+const testFunction = (str) => {
+	return str.length
+}
+testFunction()
+
+const testFunction = str => str.length
+
+CSS
+id(100) > class(10) > p,h1,a...(1)
+!important (infinite)
+border: 1px solid red
+
+display:
+	+)block : 1 line (has padding, margin)
+	+)inline: occupy exactly text-length (don't have padding, margin top,bottom)
+	+)inline-block: occupy exactly text-length (has padding, margin)
+	+)flex: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

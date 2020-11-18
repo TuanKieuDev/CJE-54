@@ -1,0 +1,40 @@
+.container{
+    margin: auto;
+    text-align: center;
+    padding: 0px 20% 0px 20%;/*chieu kim dong ho*/
+}
+
+.title{
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    padding: 100px;
+    border-radius: 10px;
+}
+
+.choose div{
+    width: 300px;
+    height: 200px;
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+    line-height: 200px;
+}
+
+.choose{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .choose div:last-child{
+    margin-left: 40%;
+} */
+#yes{
+    background-color: aqua;
+    border-style: groove;
+}
+
+#no{
+    background-color: tomato;
+    border-style: groove;
+}
