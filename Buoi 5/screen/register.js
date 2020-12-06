@@ -113,8 +113,10 @@ class RegisterScreen extends HTMLElement{
                 email: email,
                 password: CryptoJS.MD5(password).toString(CryptoJS.enc.Hex),
               }
-              console.log(newUser)
-              firebaseData.add(newUser)
+              
+              firebaseData.add(newUser);
+              alert("Register Done");
+              
         })
 
 
