@@ -13,3 +13,11 @@ export function getDataFromDoc(doc) {
     // return listRes
     return data.docs.map(getDataFromDoc)
   }
+
+  export function saveToLocalStorage(key, value) {
+    localStorage.setItem(key, JSON.stringify(value) )
+  }
+
+  export function getItemToLocalStorage(key) {
+    return JSON.parse(localStorage.getItem(key))
+  }

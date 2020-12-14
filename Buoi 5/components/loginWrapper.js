@@ -1,5 +1,3 @@
-
-
 const style = `
     .error{
         color: red;
@@ -10,13 +8,13 @@ const style = `
         border: 1px solid #dbdbdb;
         padding: 12px;
     }
-    .input-wrapper{
+    .login-wrapper{
         margin-bottom:10px
     }
 `
 
 
-class InputWrapper extends HTMLElement{
+class loginWrapper extends HTMLElement{
     constructor(){
         super();
         this._shadowRoot = this.attachShadow({mode: 'open'})
@@ -27,7 +25,7 @@ class InputWrapper extends HTMLElement{
         this.error = this.getAttribute('error') || '';
         this._shadowRoot.innerHTML = `
         <style>${style}</style>
-            <div class="input-wrapper">
+            <div class="login-wrapper">
                 <input type="${this.type}" id="input-main" placeholder="${this.placeholder}">
                 <div class="error">${this.error}</div>
             </div>
@@ -51,4 +49,4 @@ attributeChangedCallback(name, oldValue, newValue){
     }
     //getter
 }
-window.customElements.define('input-wrapper', InputWrapper);
+window.customElements.define('login-wrapper', loginWrapper);
